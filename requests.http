@@ -79,7 +79,8 @@ Content-Type: application/json
         "airSwingUD": null,
         "airSwingLR": null,
         "fanAutoMode": null,
-        "fanSpeed": null
+        "fanSpeed": null,
+        "nanoe": null
     }
 }
 
@@ -150,5 +151,10 @@ Content-Type: application/json
     "Dry": 1,
     "Cool": 2,
     "Heat": 3,
-    "Fan": 4 // not sure
+    "Fan": 4
+}
+
+"nanoe": {
+    "On": 1,
+    "Off": 2
 }

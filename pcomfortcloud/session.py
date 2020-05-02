@@ -321,6 +321,9 @@ class Session(object):
                 
                 if key == 'eco' and isinstance(value, constants.EcoMode):
                     parameters['ecoMode'] = value.value
+                    
+                if key == 'nanoe' and isinstance(value, constants.Nanoe):
+                    parameters['nanoe'] = value.value
 
 
         # routine to set the auto mode of fan (either horizontal, vertical, both or disabled)
@@ -438,4 +441,7 @@ class Session(object):
             elif parameters['fanAutoMode'] == constants.AirSwingAutoMode.AirSwingUD.value:
                 value['airSwingVertical'] = constants.AirSwingUD.Auto
 
+        if 'nanoe' in parameters:
+            value['nanoe'] = constants.Nanoe(parameters['nanoe'])
+            
         return value

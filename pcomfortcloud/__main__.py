@@ -159,6 +159,13 @@ def main():
             pcomfortcloud.constants.AirSwingLR.Right.name],
         help='Horizontal position of the air swing')
 
+    set_parser.add_argument(
+        '-n', '--nanoe',
+        choices=[
+            pcomfortcloud.constants.Nanoe.On.name,
+            pcomfortcloud.constants.Nanoe.Off.name],
+        help='Nanoe')
+    
     dump_parser = commandparser.add_parser(
         'dump',
         help="Dump data of a device")
@@ -239,6 +246,9 @@ def main():
 
             if args.airSwingVertical is not None:
                 kwargs['airSwingVertical'] = pcomfortcloud.constants.AirSwingUD[args.airSwingVertical]
+                
+            if args.nanoe is not None:
+                kwargs['nanoe'] = pcomfortcloud.constants.nanoe[args.nanoe]
 
             session.set_device(device['id'], **kwargs)
 

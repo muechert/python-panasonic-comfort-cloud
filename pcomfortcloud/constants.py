@@ -45,6 +45,10 @@ class FanSpeed(Enum):
     Mid = 3
     HighMid = 4
     High = 5
+    
+class Nanoe(Enum):
+    Off = 1
+    On = 2
 
 class dataMode(Enum):
     Day = 0

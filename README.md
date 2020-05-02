@@ -46,6 +46,7 @@ usage: pcomfortcloud.py username password set [-h]
                                              [-e, --eco {Auto,Quiet,Powerful}]
                                              [-y, --airswingvertical {Auto,Down,DownMid,Mid,UpMid,Up}]
                                              [-x, --airswinghorizontal {Auto,Left,LeftMid,Mid,RightMid,Right}]
+                                             [-n, --nanoe {On,Off}]
                                              device
 
 positional arguments:
@@ -68,6 +69,8 @@ optional arguments:
                         Vertical position of the air swing
   -x, --airswinghorizontal {Auto,Left,LeftMid,Mid,RightMid,Right}
                         Horizontal position of the air swing
+  -n, --nanoe {On,Off}
+                        Nanoe (X) air purifier
 ```
 
 ## Module usage

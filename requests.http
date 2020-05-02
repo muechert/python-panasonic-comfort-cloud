@@ -155,6 +155,6 @@ Content-Type: application/json
 }
 
 "nanoe": {
-    "On": 1,
-    "Off": 2
+    "On": 2,
+    "Off": 1
 }
